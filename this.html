@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+<body>
+  <script>
+    var car = {
+      //color: 'red',
+      //getColor: function(){
+        //return this.color;
+      //},
+      //setColor: function(c){
+        //this.color = c;
+      //}
+      started: false,
+
+      drive: function(){
+        if (this.started == true){
+          alert('Zoom! Zoom!');
+        }else{
+          alert('try again');
+        }
+      },
+
+      start: function(){
+        this.started = true;
+      },
+
+      stop: function(){
+        this.started = false;
+      }
+    }
+
+   car.start();
+   car.drive();
+   car.stop();
+   car.drive();
+  </script>
+</body>
+</html>
